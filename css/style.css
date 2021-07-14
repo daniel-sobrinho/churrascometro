@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../img/barbecue-background.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 50%;
+}
+
+.container{
+    width: 50%;
+}
+
+.card-container{
+    text-align: center;
+    width: 60%;
+    background-color: #FFFFFF;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #A5A5A5;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.card-container h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-container input, .card-container button{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0.25px;
+    font-size:medium;
+    outline: none;
+}
+
+.card-container button{
+    margin-top: 20px;
+    border-style: none;
+    background-color: #A5A5A5;
+    color: #FFFFFF;
+}
+
+.card-container button:hover{
+    cursor: pointer;
+}
+
+#resultado{
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#resultado p{
+    display: flex;
+    font-size: large;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#resultado p img{
+    margin-right: 5px;
+}
