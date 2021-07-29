@@ -9,9 +9,15 @@ function calcular(){
     let criancas = inputCriancas.value;
     let duracao = inputDuracao.value;
 
-    if(adultos == 0 || adultos == ""){
+    if(adultos <= 0 || adultos == ""){
         alert("Pelo menos um adulto deve participar do churrasco");
         inputAdultos.focus();
+        return;
+    }
+
+    if(criancas < 0){
+        alert("Este valor não pode ser menor que zero");
+        inputCriancas.focus();
         return;
     }
 
@@ -19,8 +25,8 @@ function calcular(){
         alert("Você deve informar a duração do evento");
         inputDuracao.focus();
         return;
-    }else if(duracao == 0){
-        alert("A duração do evento não pode ser 0 horas");
+    }else if(duracao <= 0){
+        alert("A duração do evento não pode ser menor que uma hora");
         inputDuracao.focus();
         return;
     }
